@@ -1,0 +1,51 @@
+.file-files-section {
+    width: 40%;
+    margin-left: 3%;
+}
+.conceptSection {
+    position: relative;
+    margin-top: -58px;
+    margin-left: 350px;
+}
+.displayBk {
+    display: block;
+}
+.Left3Porc {
+    margin-left: 3%
+}
+.textAreaheightNone {
+    resize: none;
+}
+.textAlgC {
+    text-align: center;
+}
+.bgGrey {
+    background-color: #dddddd;
+}
+.valuesRequest {
+    display: flex;
+}
+.tableInformationCredit {
+    margin-bottom: 27px;
+}
+.RequestSection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos de tablas: Dashboard */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    /* background-color: #dddddd; */
+}

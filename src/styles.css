@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+.informationFile {
+    border: 1px solid;
+    width: auto;
+}
+.container {
+    margin: 5% 0 0 8%;
+}
+.textBGWhiteLine {
+    background-color: #ffffff;
+    background-color: #ffffff;
+    top: -15px;
+    left: 10px;
+    position: relative;
+}
+#customTalbe {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#customTalbe td, #customTalbe th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#customTalbe tr:nth-child(even){
+    /* background-color: #f2f2f2; */
+}
+#customTalbe tr:hover {
+    /* background-color: #ddd; */
+}
+#customTalbe th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    /* background-color: #4CAF50; */
+    /* color: white; */
+}
