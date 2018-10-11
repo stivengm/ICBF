@@ -32,6 +32,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.spaceWidth {
+    width: 100px;
+}
 
 /* Estilos de tablas: Dashboard */
 table {
