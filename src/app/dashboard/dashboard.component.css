@@ -2,6 +2,23 @@
     width: 40%;
     margin-left: 3%;
 }
+.spaceUpdateDocument {
+    padding-left: 10px;
+    padding-top: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.form-group {
+    margin-bottom: 5px;
+}
+.sectionContainer {
+    padding: 36px 30px 10px 30px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
 .conceptSection {
     position: relative;
     margin-top: -58px;
@@ -35,20 +52,17 @@
 .spaceWidth {
     width: 100px;
 }
-
 /* Estilos de tablas: Dashboard */
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 70%;
 }
-
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
-
 tr:nth-child(even) {
     /* background-color: #dddddd; */
 }
