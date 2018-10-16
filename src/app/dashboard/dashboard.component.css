@@ -59,10 +59,3 @@ td, th {
 tr:nth-child(even) {
     /* background-color: #dddddd; */
 }
-
-/* Buttons */
-.btn-me {
-    position: relative;
-    margin-top: 1%;
-    margin-left: 89%;
-}

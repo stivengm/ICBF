@@ -7,6 +7,9 @@
     border: 1px solid;
     width: auto;
 }
+.textMiddle {
+    text-align: center !important;
+}
 .container {
     margin: 1% 0 0 8%;
 }
@@ -38,7 +41,6 @@
     /* background-color: #4CAF50; */
     /* color: white; */
 }
-
 /* Estilos globales para el div que recubre toda la sección. */
 .sectionContainer {
     padding: 36px 30px 10px 30px;
@@ -46,4 +48,16 @@
     border-radius: 30px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+/* Buttons */
+.btn-me {
+    position: relative;
+    margin-top: 1%;
+    margin-left: 89%;
+}
+/* BorderwSolid en valores de números como si fueran texto. */
+.ValueBorder {
+    border: 1px solid;
+    width: fit-content;
+    padding: 2px;
 }

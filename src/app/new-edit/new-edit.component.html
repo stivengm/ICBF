@@ -59,27 +59,15 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let valueSales of valueListSales; let i = index">
-                  <td>{{ valueSales }}</td>
-                  <!-- <td>{{ i }}</td> -->
-                </tr>
-                <tr>
-                  <td class="textAlgC">{{ valueTalbeValueSales }}</td>
-                  <td class="textAlgC">{{ FuenteNacion1 }}</td>
-                  <td class="textAlgC">{{ valueRequest1 }}</td>
-                  <td class="textAlgC">{{ valueAproved1 }}</td>
-                </tr>
-                <tr>
-                  <td class="textAlgC">{{ periodo2 }}</td>
-                  <td class="textAlgC">{{ FuenteNacion2 }}</td>
-                  <td class="textAlgC">{{ valueRequest2 }}</td>
-                  <td class="textAlgC">{{ valueAproved2 }}</td>
-                </tr>
-                <tr>
-                  <td class="textAlgC">{{ periodo3 }}</td>
-                  <td class="textAlgC">{{ FuenteNacion3 }}</td>
-                  <td class="textAlgC">{{ valueRequest3 }}</td>
-                  <td class="textAlgC">{{ valueAproved3 }}</td>
+                <tr *ngFor="let valueSales of valueListSales">
+                  <td class="textMiddle">{{ valueSales.periodo }}</td>
+                  <td class="textMiddle">{{ valueSales.FuenteNacion }}</td>
+                  <td class="textMiddle">
+                    <p class="ValueBorder">{{ valueSales.valueRequest }}</p>
+                  </td>
+                  <td class="textMiddle">
+                    <p class="ValueBorder">{{ valueSales.valueAproved }}</p>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -112,6 +100,17 @@
               <label class="form-check-label" for="inlineRadioBot4">Devuelta</label>
             </div>
           </section>
+        </section>
+      </section>
+    </section>
+  </section>
+  <section class="buttonNext">
+    <section class="next">
+      <section class="nextPage">
+        <section class="newEdit">
+          <div>
+            <button class="btn btn-light btn-me" routerLink="/popUps">Next</button>
+          </div>
         </section>
       </section>
     </section>

@@ -26,7 +26,9 @@ export class NewEditComponent implements OnInit {
   ];
 
   valueListSales = [
-  {id: 1, periodo1: '2018', FuenteNacion1: 'Nación' }
+    { id: 1, periodo: '2018', FuenteNacion: 'Nación', valueRequest: '200000000', valueAproved: '200000000' },
+    { id: 2, periodo: '2018', FuenteNacion: 'Propia', valueRequest: '180000000', valueAproved: '200000000' },
+    { id: 3, periodo: '2019', FuenteNacion: 'Nación', valueRequest: '200000000', valueAproved: '200000000' }
   ]
 
   constructor() { }

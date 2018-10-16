@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 // import { NotFundComponent } from './not-fund/not-fund.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewEditComponent } from './new-edit/new-edit.component';
+import { PopUpsComponent } from './pop-ups/pop-ups.component';
 
 const routes: Routes = [
   {
@@ -22,11 +23,11 @@ const routes: Routes = [
     component: NewEditComponent,
     pathMatch: 'full'
   },
-  // {
-  //   path: 'champions',
-  //   component: ChampsComponent,
-  //   pathMatch: 'full'
-  // }
+  {
+    path: 'popUps',
+    component: PopUpsComponent,
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({

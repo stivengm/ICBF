@@ -8,6 +8,7 @@ import { FooterComponent } from './header/footer/footer.component';
 import { NotFundComponent } from './not-fund/not-fund.component';
 import { NewEditComponent } from './new-edit/new-edit.component';
 import { HeaderNavbarComponent } from './header/header-navbar/header-navbar.component';
+import { PopUpsComponent } from './pop-ups/pop-ups.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderNavbarComponent } from './header/header-navbar/header-navbar.comp
     FooterComponent,
     NotFundComponent,
     NewEditComponent,
-    HeaderNavbarComponent
+    HeaderNavbarComponent,
+    PopUpsComponent
   ],
   imports: [
     BrowserModule,
