@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 // import { NotFundComponent } from './not-fund/not-fund.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-// import { ChampsComponent } from './champs/champs.component';
+import { NewEditComponent } from './new-edit/new-edit.component';
 
 const routes: Routes = [
   {
@@ -12,11 +12,16 @@ const routes: Routes = [
     component: DashboardComponent,
     // children: []
   },
-//   {
-//     path: '**',
-//     component: NotFundComponent,
-//     pathMatch: 'full'
-//   },
+  // {
+  //   path: '**',
+  //   component: NotFundComponent,
+  //   pathMatch: 'full'
+  // },
+  {
+    path: 'newEdit',
+    component: NewEditComponent,
+    pathMatch: 'full'
+  },
   // {
   //   path: 'champions',
   //   component: ChampsComponent,

@@ -1,0 +1,119 @@
+<section class="container">
+  <section class="containerSection">
+    <section class="sectionContainer">
+      <section class="informationFile">
+        <span class="textBGWhiteLine">Documentos entes externos Programació - Nuevo / Editar</span>
+        <section class="addFiles">
+          <form>
+            <div class="form-group file-files-section">
+              <label for="exampleFormControlFile1">Concepto DPS</label>
+              <input type="file" class="form-control-file file-files-upload" id="exampleFormControlFile1">
+            </div>
+          </form>
+          <section class="conceptSection">
+            <span class="concept">Concepto<br></span>
+
+            <div class="form-check form-check-inline">
+
+              <input class="form-check-input" type="radio" name="inlineRadioOptionsDPS" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Favorable</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptionsDPS" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Con Obervación</label>
+            </div>
+          </section>
+          <form>
+            <div class="form-group file-files-section">
+              <label for="exampleFormControlFile1">Concepto DNP</label>
+              <input type="file" class="form-control-file file-files-upload" id="exampleFormControlFile1">
+            </div>
+          </form>
+          <section class="conceptSection">
+            <span class="concept">Concepto<br></span>
+
+            <div class="form-check form-check-inline">
+
+              <input class="form-check-input" type="radio" name="inlineRadioOptionsDNP" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio3">Favorable</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptionsDNP" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio4">Con Obervación</label>
+            </div>
+          </section>
+          <section class="textAreaObs">
+            <span class="displayBk Left3Porc">Observaciones</span>
+            <textarea class="Left3Porc textAreaheightNone" name="Obervaciones" placeholder="Obsercaciones del documento"
+              id="" cols="30" rows="3"></textarea>
+          </section>
+          <section class="tableInformation Left3Porc">
+            <span class="displayBk">Valor aprobado por fuente de Financiación para cada vigencia</span>
+            <table class="tableInformationCredit">
+              <thead>
+                <tr>
+                  <th class="bgGrey">Periodo</th>
+                  <th class="bgGrey">Fuente de Financiación</th>
+                  <th class="bgGrey">Valor Solicitado</th>
+                  <th class="bgGrey">Valor Aprobado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let valueSales of valueListSales; let i = index">
+                  <td>{{ valueSales }}</td>
+                  <!-- <td>{{ i }}</td> -->
+                </tr>
+                <tr>
+                  <td class="textAlgC">{{ valueTalbeValueSales }}</td>
+                  <td class="textAlgC">{{ FuenteNacion1 }}</td>
+                  <td class="textAlgC">{{ valueRequest1 }}</td>
+                  <td class="textAlgC">{{ valueAproved1 }}</td>
+                </tr>
+                <tr>
+                  <td class="textAlgC">{{ periodo2 }}</td>
+                  <td class="textAlgC">{{ FuenteNacion2 }}</td>
+                  <td class="textAlgC">{{ valueRequest2 }}</td>
+                  <td class="textAlgC">{{ valueAproved2 }}</td>
+                </tr>
+                <tr>
+                  <td class="textAlgC">{{ periodo3 }}</td>
+                  <td class="textAlgC">{{ FuenteNacion3 }}</td>
+                  <td class="textAlgC">{{ valueRequest3 }}</td>
+                  <td class="textAlgC">{{ valueAproved3 }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="valuesRequest Left3Porc">
+            <section class="valueTotalRequest">
+              <span>Valor Total Solicitado</span>
+              <input type="text" />
+            </section>
+            <section class="valueTotalAproved">
+              <span>Valor Total Aprobado</span>
+              <input type="text" />
+            </section>
+          </section>
+          <section class="RequestSection Left3Porc">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptionsRequest" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadioBot1">Edición</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptionsRequest" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadioBot2">Finalizada</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptionsRequest" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadioBot3">Anulada</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptionsRequest" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadioBot4">Devuelta</label>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</section>

@@ -1,14 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+/* Interlineado de abajo. */
+.textDecorationNone {
+    text-decoration: none;
+}
 .informationFile {
     border: 1px solid;
     width: auto;
 }
 .container {
-    margin: 5% 0 0 8%;
+    margin: 1% 0 0 8%;
 }
 .textBGWhiteLine {
-    background-color: #ffffff;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     top: -15px;
     left: 10px;
     position: relative;
@@ -34,4 +37,13 @@
     text-align: left;
     /* background-color: #4CAF50; */
     /* color: white; */
+}
+
+/* Estilos globales para el div que recubre toda la sección. */
+.sectionContainer {
+    padding: 36px 30px 10px 30px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
