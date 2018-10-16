@@ -75,3 +75,20 @@ td, th {
 tr:nth-child(even) {
     /* background-color: #dddddd; */
 }
+
+/* Formularios */
+.form-control:focus {
+    border-color: #ced4da !important;
+    box-shadow: none !important;
+}
+
+/* TextAling */
+.textAlgLeft {
+    text-align: left;
+}
+.textAlgCenter {
+    text-align: center;
+}
+.textAlgRight {
+    text-align: right;
+}

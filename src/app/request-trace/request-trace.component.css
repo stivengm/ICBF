@@ -11,10 +11,22 @@
     position: relative;
     display: block;
     overflow-x: auto;
+    height: 367px;
 }
 .BGth {
     background-color: #9c9c9c;
+    text-align: center;
 }
 .BGtdWhite {
     background-color: #ffffff;
+}
+.withIcon {
+    width: 90%;
+}
+.calendar-Me {
+    position: absolute;
+    display: block;
+    top: 34px;
+    font-size: 31px;
+    right: 11px;
 }

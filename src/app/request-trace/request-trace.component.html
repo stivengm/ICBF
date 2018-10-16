@@ -11,28 +11,31 @@
                   <label for="inputState">Área</label>
                   <select id="inputState" class="form-control">
                     <option selected>--Seleccione--</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
                   </select>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="inputCity">Fecha Inicio</label>
-                  <input type="date" class="form-control" id="inputCity">
+                  <input type="date" class="form-control withIcon" id="inputCity">
+                  <i class="far fa-calendar-alt calendar-Me"></i>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="inputCity">Fecha Fin</label>
-                  <input type="date" class="form-control" id="inputCity">
+                  <input type="date" class="form-control withIcon" id="inputCity">
+                  <i class="far fa-calendar-alt calendar-Me"></i>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="inputState">Estado Solicitud VF</label>
                   <select id="inputState" class="form-control">
                     <option selected>--Seleccione--</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option>En Proceso</option>
+                    <option>Devuelto por CDP</option>
+                    <option>Anulado</option>
+                    <option>Devuelto</option>
+                    <option>En Revisión</option>
+                    <option>Revisado</option>
+                    <option>Devuelto</option>
                   </select>
                 </div>
               </div>
@@ -41,9 +44,6 @@
                   <label for="inputState">Nro de solicitud VF</label>
                   <select id="inputState" class="form-control">
                     <option selected>--Seleccione--</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
                   </select>
                 </div>
               </div>
@@ -54,8 +54,9 @@
                 <table class="tableInformationRequest">
                   <thead>
                     <tr>
-                      <th colspan="7" class="BGth">Solicitud Vigencia Factura</th>
-                      <th colspan="3" class="BGth">Solicitud CO</th>
+                      <th colspan="6" class="BGth">Solicitud Vigencia Factura</th>
+                      <th colspan="5" class="BGth">Solicitud COP</th>
+                      <th colspan="5" class="BGth">Solicitud Sertificado 15%</th>
                     </tr>
                     <tr>
                       <th class="BGth">Nro de Solicitud VF</th>
@@ -67,21 +68,27 @@
                       <th class="BGth">Nro Solicitud COP</th>
                       <th class="BGth">Fecha Solicitud COP</th>
                       <th class="BGth">Usuario Area</th>
-                      <th class="BGth">Usuario</th>
+                      <th class="BGth">Usuario Presupuesto</th>
+                      <th class="BGth">Estado</th>
+                      <th class="BGth">Nro Solicitud Cert 15%</th>
+                      <th class="BGth">Fecha Solicitud Cert 15%</th>
+                      <th class="BGth">Usuario Area</th>
+                      <th class="BGth">Usuario Presupuesto</th>
+                      <th class="BGth">Estado</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr *ngFor="let valueList of valueListTable">
-                      <td class="BGtdWhite"> {{ valueList.numberRequest }} </td>
-                      <td class="BGtdWhite"> {{ valueList.dateRequest }} </td>
-                      <td class="BGtdWhite"> {{ valueList.area }} </td>
-                      <td class="BGtdWhite"> {{ valueList.userArea }} </td>
-                      <td class="BGtdWhite"> {{ valueList.userProgram }} </td>
-                      <td class="BGtdWhite"> {{ valueList.state }} </td>
-                      <td class="BGtdWhite"> {{ valueList.numberRequestCOP }} </td>
-                      <td class="BGtdWhite"> {{ valueList.dateRequestCOP }} </td>
-                      <td class="BGtdWhite"> {{ valueList.UserAreaCOP }} </td>
-                      <td class="BGtdWhite"> {{ valueList.user }} </td>
+                      <td class="BGtdWhite textAlgRight"> {{ valueList.numberRequest }} </td>
+                      <td class="BGtdWhite textAlgRight"> {{ valueList.dateRequest }} </td>
+                      <td class="BGtdWhite textAlgLeft"> {{ valueList.area }} </td>
+                      <td class="BGtdWhite textAlgLeft"> {{ valueList.userArea }} </td>
+                      <td class="BGtdWhite textAlgLeft"> {{ valueList.userProgram }} </td>
+                      <td class="BGtdWhite textAlgLeft"> {{ valueList.state }} </td>
+                      <td class="BGtdWhite textAlgRight"> {{ valueList.numberRequestCOP }} </td>
+                      <td class="BGtdWhite textAlgRight"> {{ valueList.dateRequestCOP }} </td>
+                      <td class="BGtdWhite textAlgLeft"> {{ valueList.UserAreaCOP }} </td>
+                      <td class="BGtdWhite textAlgLeft"> {{ valueList.user }} </td>
                     </tr>
                   </tbody>
                 </table>
