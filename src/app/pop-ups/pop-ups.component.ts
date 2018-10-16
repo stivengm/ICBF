@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// ES6 Modules or TypeScript
 import swal from 'sweetalert2'
-
-// CommonJS
 const swal = require('sweetalert2')
 
 @Component({
@@ -22,7 +19,7 @@ export class PopUpsComponent implements OnInit {
   titleConfirm = 'Los cambios se han realizado correctamente.';
   descriptionConfirm = '';
   typeConfirm = 'success';
-  
+
   // OptionCancel
   titleCancel = 'Los cambios no se han relizado correctamente.';
   descriptionCancel = '';

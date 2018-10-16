@@ -1,0 +1,95 @@
+<section class="container">
+  <section class="sectionAllBorder">
+    <section class="containerSection">
+      <section class="sectionContainer">
+        <section class="informationFile">
+          <span class="textBGWhiteLine">Documentos entes externos - listar</span>
+          <section class="formulario">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState">Área</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>--Seleccione--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputCity">Fecha Inicio</label>
+                  <input type="date" class="form-control" id="inputCity">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">Fecha Fin</label>
+                  <input type="date" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState">Estado Solicitud VF</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>--Seleccione--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState">Nro de solicitud VF</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>--Seleccione--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+            </form>
+            <section class="tableList">
+              <section class="tableInformation">
+                <table class="tableInformationRequest">
+                  <thead>
+                    <tr>
+                      <th colspan="7" class="BGth">Solicitud Vigencia Factura</th>
+                      <th colspan="3" class="BGth">Solicitud CO</th>
+                    </tr>
+                    <tr>
+                      <th class="BGth">Nro de Solicitud VF</th>
+                      <th class="BGth">Fecha Solicitud VF</th>
+                      <th class="BGth">Area</th>
+                      <th class="BGth">Usuario Area</th>
+                      <th class="BGth">Usuario Programa</th>
+                      <th class="BGth">Estado</th>
+                      <th class="BGth">Nro Solicitud COP</th>
+                      <th class="BGth">Fecha Solicitud COP</th>
+                      <th class="BGth">Usuario Area</th>
+                      <th class="BGth">Usuario</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let valueList of valueListTable">
+                      <td class="BGtdWhite"> {{ valueList.numberRequest }} </td>
+                      <td class="BGtdWhite"> {{ valueList.dateRequest }} </td>
+                      <td class="BGtdWhite"> {{ valueList.area }} </td>
+                      <td class="BGtdWhite"> {{ valueList.userArea }} </td>
+                      <td class="BGtdWhite"> {{ valueList.userProgram }} </td>
+                      <td class="BGtdWhite"> {{ valueList.state }} </td>
+                      <td class="BGtdWhite"> {{ valueList.numberRequestCOP }} </td>
+                      <td class="BGtdWhite"> {{ valueList.dateRequestCOP }} </td>
+                      <td class="BGtdWhite"> {{ valueList.UserAreaCOP }} </td>
+                      <td class="BGtdWhite"> {{ valueList.user }} </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</section>
