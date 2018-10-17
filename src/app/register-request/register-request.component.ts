@@ -21,5 +21,4 @@ export class RegisterRequestComponent implements OnInit {
       this.iconI = 'fas fa-info';
     }
   }
-
 }

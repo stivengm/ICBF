@@ -55,6 +55,16 @@
     margin-top: 1%;
     margin-left: 89%;
 }
+.btnsNextBack {
+    display: inline-flex;
+    width: 104%;
+    position: relative;
+}
+.btnBack {
+    display: block;
+    position: absolute;
+    margin-left: 0;
+}
 /* BorderwSolid en valores de números como si fueran texto. */
 .ValueBorder {
     border: 1px solid;
