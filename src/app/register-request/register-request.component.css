@@ -1,0 +1,6 @@
+.tableRegisterRequest {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+}

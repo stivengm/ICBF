@@ -43,7 +43,7 @@
 }
 /* Estilos globales para el div que recubre toda la sección. */
 .sectionContainer {
-    padding: 36px 30px 10px 30px;
+    padding: 36px 30px 31px 30px;
     border: 1px solid grey;
     border-radius: 30px;
     background-color: #f9f9f9;
@@ -91,4 +91,24 @@ tr:nth-child(even) {
 }
 .textAlgRight {
     text-align: right;
+}
+/* Icons! */
+.withIcon {
+    width: 90%;
+}
+.calendar-Me {
+    position: absolute;
+    display: block;
+    top: 34px;
+    font-size: 31px;
+    right: 11px;
+}
+
+/* BG */
+.BGth {
+    background-color: #9c9c9c;
+    text-align: center;
+}
+.BGtdWhite {
+    background-color: #ffffff;
 }

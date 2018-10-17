@@ -1,0 +1,91 @@
+<section class="container">
+  <section class="sectionAllBorder">
+    <section class="containerSection">
+      <section class="sectionContainer">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputState">Área</label>
+              <select id="inputState" class="form-control">
+                <option selected>--Seleccione--</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCity">Fecha Inicio</label>
+              <input type="date" class="form-control withIcon" id="inputCity">
+              <i class="far fa-calendar-alt calendar-Me"></i>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Fecha Fin</label>
+              <input type="date" class="form-control withIcon" id="inputCity">
+              <i class="far fa-calendar-alt calendar-Me"></i>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputState">Estado Solicitud VF</label>
+              <select id="inputState" class="form-control">
+                <option selected>--Seleccione--</option>
+                <option>En Proceso</option>
+                <option>Devuelto por CDP</option>
+                <option>Anulado</option>
+                <option>Devuelto</option>
+                <option>En Revisión</option>
+                <option>Revisado</option>
+                <option>Devuelto</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputState">Nro de solicitud VF SIIF</label>
+              <select id="inputState" class="form-control">
+                <option selected>--Seleccione--</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputState">Nro de solicitud VF SIIF</label>
+              <select id="inputState" class="form-control">
+                <option selected>--Seleccione--</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <section class="tableBot">
+          <table class="tableRegisterRequest">
+            <thead>
+              <tr>
+                <th class="BGth"></th>
+                <th class="BGth">Nro Solicitud VF</th>
+                <th class="BGth">Nro Solicitud VF SIIF</th>
+                <th class="BGth">Fecha Solicitud VF SIIF</th>
+                <th class="BGth">Nro Autorización VF SIIF</th>
+                <th class="BGth">Valor Total Aprobado</th>
+                <th class="BGth">Fecha Autorización VF SIIF</th>
+                <th class="BGth">Área</th>
+                <th class="BGth">Documento Solicitud</th>
+                <th class="BGth">Documento Autorización</th>
+                <th class="BGth">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let valueList of valueListSIIF">
+                <td><i class="{{ iconI }}"></i></td>
+                <td>{{ valueList.nroRequestVF }}</td>
+                <td>{{ valueList.nroRequestVFSIIF}} </td>
+                <td>{{ valueList.dateRequestVFSIIF }}</td>
+                <td>{{ valueList.nroAutorizationVFSIIF }}</td>
+                <td>{{ valueList.valueTotalAproved }}</td>
+                <td>{{ valueList.dateAutorizationVFSIIF }}</td>
+                <td>{{ valueList.area }}</td>
+                <td>{{ valueList.documentReques }}</td>
+                <td>{{ valueList.documentAutorization }}</td>
+                <td>{{ valueList.state }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </section>
+  </section>
+</section>

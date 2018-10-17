@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewEditComponent } from './new-edit/new-edit.component';
 import { PopUpsComponent } from './pop-ups/pop-ups.component';
 import { RequestTraceComponent } from './request-trace/request-trace.component';
+import { RegisterRequestComponent } from './register-request/register-request.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,11 @@ const routes: Routes = [
   {
     path: 'requestTrace',
     component: RequestTraceComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'registerRequest',
+    component: RegisterRequestComponent,
     pathMatch: 'full'
   },
 ];

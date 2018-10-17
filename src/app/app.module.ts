@@ -10,6 +10,7 @@ import { NewEditComponent } from './new-edit/new-edit.component';
 import { HeaderNavbarComponent } from './header/header-navbar/header-navbar.component';
 import { PopUpsComponent } from './pop-ups/pop-ups.component';
 import { RequestTraceComponent } from './request-trace/request-trace.component';
+import { RegisterRequestComponent } from './register-request/register-request.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RequestTraceComponent } from './request-trace/request-trace.component';
     NewEditComponent,
     HeaderNavbarComponent,
     PopUpsComponent,
-    RequestTraceComponent
+    RequestTraceComponent,
+    RegisterRequestComponent
   ],
   imports: [
     BrowserModule,
